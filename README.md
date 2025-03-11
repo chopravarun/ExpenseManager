@@ -31,7 +31,11 @@ This project automates expense tracking by processing bank SMS notifications wit
    ```
 2. Set up your AWS Lambda function and API Gateway.
 3. Configure iOS Automation to send SMS content to your API endpoint.
-4. Store API keys securely (see below).
+4. Store API keys securely in .env file
+   ```sh
+   openAI.apiKey=<gpt_key>
+   user.token=<auth_token>
+   ```
 
 ## Hiding API Keys from Git
 To keep your API keys secure:
