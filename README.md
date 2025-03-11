@@ -36,33 +36,3 @@ This project automates expense tracking by processing bank SMS notifications wit
    openAI.apiKey=<gpt_key>
    user.token=<auth_token>
    ```
-
-## Hiding API Keys from Git
-To keep your API keys secure:
-1. **Use Environment Variables**:
-   - Store API keys in environment variables instead of hardcoding them in your code.
-   - Example in Python:
-     ```python
-     import os
-     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-     ```
-
-2. **Use a `.env` File** (for local development):
-   - Create a `.env` file:
-     ```sh
-     OPENAI_API_KEY=your_api_key_here
-     ```
-   - Use `python-dotenv` in Python to load it:
-     ```python
-     from dotenv import load_dotenv
-     load_dotenv()
-     ```
-
-3. **Add `.env` to `.gitignore`**:
-   - Open or create a `.gitignore` file and add:
-     ```
-     .env
-     config.json
-     *.secrets
-     ```
-   - This prevents sensitive files from being committed to Git.
