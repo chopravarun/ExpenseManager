@@ -26,8 +26,7 @@ This project automates expense tracking by processing bank SMS notifications wit
 ## Setup
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-username/expense-tracker.git
-   cd expense-tracker
+   git clone https://github.com/chopravarun/ExpenseManager.git
    ```
 2. Set up your AWS Lambda function and API Gateway.
 3. Configure iOS Automation to send SMS content to your API endpoint.
